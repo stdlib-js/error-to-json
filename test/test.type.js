@@ -71,7 +71,7 @@ tape( 'if provided an error from a different realm, the function returns the clo
 	var i;
 
 	typeName = proxyquire( './../lib/type.js', {
-		'@stdlib/assert/instance-of': instanceOf
+		'@stdlib/assert-instance-of': instanceOf
 	});
 
 	values = [
