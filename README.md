@@ -257,6 +257,20 @@ out = toJSON( err );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/error/reviver`][@stdlib/error/reviver]: revive a JSON-serialized error object.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -331,6 +345,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [mdn-eval-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError
 
 [node-system-error]: https://nodejs.org/api/errors.html#errors_class_system_error
+
+<!-- <related-links> -->
+
+[@stdlib/error/reviver]: https://github.com/stdlib-js/error-reviver
+
+<!-- </related-links> -->
 
 </section>
 
