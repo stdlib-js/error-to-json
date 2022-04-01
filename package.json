@@ -1,0 +1,37 @@
+{
+  "name": "@stdlib/error-to-json",
+  "version": "0.0.0",
+  "description": "Return a JSON representation of an error object.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/error-to-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "error",
+    "object",
+    "err",
+    "obj",
+    "serialize",
+    "tojson",
+    "json",
+    "to",
+    "convert"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
