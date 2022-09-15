@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# toJSON
+# error2json
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -57,18 +57,18 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 ## Usage
 
 ```javascript
-var toJSON = require( '@stdlib/error-to-json' );
+var error2json = require( '@stdlib/error-to-json' );
 ```
 
-#### toJSON( error )
+#### error2json( error )
 
 Returns a [JSON][json] representation of an [`error`][mdn-error] object.
 
 ```javascript
 var err = new Error( 'beep' );
 
-var json = toJSON( err );
-/* returns
+var json = error2json( err );
+/* e.g., returns
     {
         'type': 'Error',
         'name': 'Error', // if present
@@ -100,8 +100,8 @@ var err = new Error( 'beep' );
 err.a = 'b';
 err.c = { 'd': 'e' };
 
-var json = toJSON( err );
-/* returns
+var json = error2json( err );
+/* e.g., returns
     {
         'type': 'Error',
         'name': 'Error', // if present
@@ -149,8 +149,8 @@ var json = toJSON( err );
 
     var err = new CustomError( 'boop' );
 
-    var json = toJSON( err );
-    /*
+    var json = error2json( err );
+    /* e.g., returns
         {
             'type': 'TypeError',
             'name': 'CustomError',
@@ -173,11 +173,11 @@ var json = toJSON( err );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var toJSON = require( '@stdlib/error-to-json' );
+var error2json = require( '@stdlib/error-to-json' );
 
 var err = new Error( 'beep' );
-var out = toJSON( err );
-/* returns
+var out = error2json( err );
+/* e.g., returns
     {
         'type': 'Error',
         'name': 'Error',
@@ -187,8 +187,8 @@ var out = toJSON( err );
 */
 
 err = new TypeError( 'invalid type' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'TypeError',
         'name': 'TypeError',
@@ -198,8 +198,8 @@ out = toJSON( err );
 */
 
 err = new SyntaxError( 'bad syntax' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'SyntaxError',
         'name': 'SyntaxError',
@@ -209,8 +209,8 @@ out = toJSON( err );
 */
 
 err = new ReferenceError( 'unknown variable' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'ReferenceError',
         'name': 'ReferenceError',
@@ -220,8 +220,8 @@ out = toJSON( err );
 */
 
 err = new URIError( 'bad URI' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'URIError',
         'name': 'URIError',
@@ -231,8 +231,8 @@ out = toJSON( err );
 */
 
 err = new RangeError( 'value out-of-range' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'RangeError',
         'name': 'RangeError',
@@ -242,8 +242,8 @@ out = toJSON( err );
 */
 
 err = new EvalError( 'eval error' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'EvalError',
         'name': 'EvalError',

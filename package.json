@@ -51,7 +51,6 @@
     "@stdlib/assert-is-browser": "^0.0.x",
     "@stdlib/assert-is-plain-object": "^0.0.x",
     "@stdlib/bench": "^0.0.x",
-    "@stdlib/string-from-code-point": "^0.0.x",
     "@stdlib/utils-define-property": "^0.0.x",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
