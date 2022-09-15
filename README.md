@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# toJSON
+# error2json
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -34,25 +34,41 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/error-to-json
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import toJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@deno/mod.js';
+var error2json = require( '@stdlib/error-to-json' );
 ```
 
-#### toJSON( error )
+#### error2json( error )
 
 Returns a [JSON][json] representation of an [`error`][mdn-error] object.
 
 ```javascript
 var err = new Error( 'beep' );
 
-var json = toJSON( err );
-/* returns
+var json = error2json( err );
+/* e.g., returns
     {
         'type': 'Error',
         'name': 'Error', // if present
@@ -84,8 +100,8 @@ var err = new Error( 'beep' );
 err.a = 'b';
 err.c = { 'd': 'e' };
 
-var json = toJSON( err );
-/* returns
+var json = error2json( err );
+/* e.g., returns
     {
         'type': 'Error',
         'name': 'Error', // if present
@@ -133,8 +149,8 @@ var json = toJSON( err );
 
     var err = new CustomError( 'boop' );
 
-    var json = toJSON( err );
-    /*
+    var json = error2json( err );
+    /* e.g., returns
         {
             'type': 'TypeError',
             'name': 'CustomError',
@@ -157,11 +173,11 @@ var json = toJSON( err );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import toJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@deno/mod.js';
+var error2json = require( '@stdlib/error-to-json' );
 
 var err = new Error( 'beep' );
-var out = toJSON( err );
-/* returns
+var out = error2json( err );
+/* e.g., returns
     {
         'type': 'Error',
         'name': 'Error',
@@ -171,8 +187,8 @@ var out = toJSON( err );
 */
 
 err = new TypeError( 'invalid type' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'TypeError',
         'name': 'TypeError',
@@ -182,8 +198,8 @@ out = toJSON( err );
 */
 
 err = new SyntaxError( 'bad syntax' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'SyntaxError',
         'name': 'SyntaxError',
@@ -193,8 +209,8 @@ out = toJSON( err );
 */
 
 err = new ReferenceError( 'unknown variable' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'ReferenceError',
         'name': 'ReferenceError',
@@ -204,8 +220,8 @@ out = toJSON( err );
 */
 
 err = new URIError( 'bad URI' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'URIError',
         'name': 'URIError',
@@ -215,8 +231,8 @@ out = toJSON( err );
 */
 
 err = new RangeError( 'value out-of-range' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'RangeError',
         'name': 'RangeError',
@@ -226,8 +242,8 @@ out = toJSON( err );
 */
 
 err = new EvalError( 'eval error' );
-out = toJSON( err );
-/* returns
+out = error2json( err );
+/* e.g., returns
     {
         'type': 'EvalError',
         'name': 'EvalError',
@@ -272,7 +288,7 @@ out = toJSON( err );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -352,7 +368,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/error/reviver]: https://github.com/stdlib-js/error-reviver/tree/deno
+[@stdlib/error/reviver]: https://github.com/stdlib-js/error-reviver
 
 <!-- </related-links> -->
 
