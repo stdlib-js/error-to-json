@@ -273,7 +273,7 @@ out = error2json( err );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/error/reviver`][@stdlib/error/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized error object.</span>
+-   <span class="package-name">[`@stdlib/error-reviver`][@stdlib/error/reviver]</span><span class="delimiter">: </span><span class="description">revive a JSON-serialized error object.</span>
 
 </section>
 
