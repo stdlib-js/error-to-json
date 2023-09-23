@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@esm/index.mjs';
+import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@v0.1.0-esm/index.mjs';
 ```
 
 #### error2json( error )
@@ -173,7 +173,7 @@ var json = error2json( err );
 <body>
 <script type="module">
 
-import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@esm/index.mjs';
+import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@v0.1.0-esm/index.mjs';
 
 var err = new Error( 'beep' );
 var out = error2json( err );
