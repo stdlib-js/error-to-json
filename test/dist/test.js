@@ -31,8 +31,8 @@ var toJSON = require( './../../dist' );
 
 // FIXTURES //
 
-var createClass1 = require( './../..xtures/customerror.proto.js' );
-var createClass2 = require( './../..xtures/customerror.subclass.js' );
+var createClass1 = require( './../fixtures/customerror.proto.js' );
+var createClass2 = require( './../fixtures/customerror.subclass.js' );
 
 
 // VARIABLES //
