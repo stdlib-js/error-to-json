@@ -46,7 +46,7 @@
     "@stdlib/utils-keys": "^0.1.0"
   },
   "devDependencies": {
-    "@stdlib/assert-has-class-support": "^0.1.0",
+    "@stdlib/assert-has-class-support": "^0.1.1",
     "@stdlib/assert-is-array": "^0.1.1",
     "@stdlib/assert-is-browser": "^0.1.1",
     "@stdlib/assert-is-plain-object": "^0.1.1",
