@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@deno/mod.js';
+import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@v0.2.2-deno/mod.js';
 ```
 
 #### error2json( error )
@@ -168,7 +168,7 @@ var json = error2json( err );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@deno/mod.js';
+import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@v0.2.2-deno/mod.js';
 
 var err = new Error( 'beep' );
 var out = error2json( err );
