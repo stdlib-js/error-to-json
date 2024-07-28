@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/error-to-json/tags). For example,
+
+```javascript
 import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@v0.2.2-esm/index.mjs';
 ```
 
@@ -173,7 +178,7 @@ var json = error2json( err );
 <body>
 <script type="module">
 
-import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@v0.2.2-esm/index.mjs';
+import error2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@esm/index.mjs';
 
 var err = new Error( 'beep' );
 var out = error2json( err );
