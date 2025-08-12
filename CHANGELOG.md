@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-26)
+## Unreleased (2025-08-12)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
 -   [`ed7e37b`](https://github.com/stdlib-js/stdlib/commit/ed7e37b45d0bbf618fab9be180b53d559ccfd3e2) - **chore:** fix typo _(by Philipp Burckhardt)_
 
 </details>
