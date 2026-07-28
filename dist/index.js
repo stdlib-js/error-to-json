@@ -1,4 +1,4 @@
-"use strict";var i=function(r,a){return function(){return a||r((a={exports:{}}).exports,a),a.exports}};var n=i(function(O,s){
+"use strict";var i=function(r,a){return function(){try{return a||r((a={exports:{}}).exports,a),a.exports}catch(e){throw (a=0, e)}};};var n=i(function(O,s){
 var E=[[TypeError,"TypeError"],[SyntaxError,"SyntaxError"],[ReferenceError,"ReferenceError"],[RangeError,"RangeError"],[URIError,"URIError"],[EvalError,"EvalError"],[Error,"Error"]];s.exports=E
 });var c=i(function(S,u){
 var y=require('@stdlib/assert-instance-of/dist'),l=require('@stdlib/utils-constructor-name/dist'),p=require('@stdlib/utils-get-prototype-of/dist'),o=n();function m(r){var a,e;for(e=0;e<o.length;e++)if(y(r,o[e][0]))return o[e][1];for(;r;){for(a=l(r),e=0;e<o.length;e++)if(a===o[e][1])return o[e][1];r=p(r)}}u.exports=m
